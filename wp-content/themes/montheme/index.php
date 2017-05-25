@@ -17,6 +17,7 @@ get_header(); ?>
 
 <div class="main-wrap" role="main">
 	<article class="main-content">
+		
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>

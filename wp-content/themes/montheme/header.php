@@ -29,16 +29,21 @@
 	<header class="site-header" role="banner">
 		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
 			<div class="title-bar-left">
-				<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
+				
 				<span class="site-mobile-title title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo le coin virgule">
+					</a>
 				</span>
+				<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"><i class="fa fa-bars" aria-hidden="true"></i></button>
 			</div>
 		</div>
-		<nav class="site-navigation top-bar" role="navigation">
+		<nav class="site-navigation top-bar row container" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo le coin virgule">
+					</a>
 				</div>
 			</div>
 			<div class="top-bar-right">
