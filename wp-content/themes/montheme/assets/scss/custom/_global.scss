@@ -6,12 +6,21 @@ h1, h2, h3, h4 {
 h1 {
     font-weight: 900;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 19px;
+    margin-bottom: 20px;
 }
 .sous-titre-entete {
     font-weight: 700;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+.sous-titre-article {
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 body {
     font-weight: 300;

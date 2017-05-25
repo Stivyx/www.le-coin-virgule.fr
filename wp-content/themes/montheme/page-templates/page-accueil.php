@@ -5,10 +5,10 @@ Template Name: Page d'accueil
 
 get_header(); ?>
 
-<div class="main-wrap page-accueil" role="main">
+<div class="page--accueil" role="main">
 
 		<!-- Accueil header -->
-		<section class="accueil-header">
+		<section class="accueil--header">
 			<figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/la-coop-vu-du-ciel.jpg" alt="">
 				<figcaption>
@@ -23,12 +23,31 @@ get_header(); ?>
 
 
 		<!-- Accueil citation -->
-		<section class="accueil-citation">
+		<section class="accueil--citation row">
 			<cite>
 				La Coop doit être un pôle de vie culturelle, économique et citoyenne. Le cahier des charges prévoit un lieu ouvert 24 heures sur 24 et 7 jours sur 7, pour se divertir ou travailler.       <span class="nom">Alain Fontanel</span> 
 			</cite>
 		</section>
 
+
+
+		<!-- Accueil esprit coop -->
+		<section class="accueil--esprit-cop">
+			<div class="row">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/esprit-coop.jpg" alt="">
+				<article>
+					<h2>
+						Le site et l’esprit COOP
+					</h2>
+					<p class="sous-titre-article">
+						Anciens bâtiments de la Coop Alsace au Port du Rhin à Strasbourg
+					</p>
+					<p>
+						La COOP est un lieu singulier du fait de son histoire et de sa forte dimension symbolique pour les Strasbourgeois. Dessinant une demi-­‐lune au cœur du port, à proximité du Rhin et de l’Allemagne, il a accueilli  jusqu’en  2015  le  siège  et  les  entrepôts  de  l’Union  des  Coopérateurs  d’Alsace,  entreprise  coopérative  de  distribution  fondée  en  1902  à  Strasbourg.  Cette  zone  concentre  de  nombreuses ambitions pour la nouvelle « nouvelle ville » du projet des Deux-­‐Rives. 
+					</p>
+				</article>
+			</div>
+		</section>
 
 
 </div>
