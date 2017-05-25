@@ -1,0 +1,28 @@
+.page-accueil {
+    margin: 0;
+
+    .accueil-header {
+        figure {
+            overflow: hidden;
+        }
+        img {
+            height: 390px;
+            max-width: none;
+            width: auto;
+        }
+        figcaption {
+            background: $grisClair;
+            border: 8px solid $blanc;
+            padding: 30px 20px;
+            margin: -280px 20px 0 20px;
+            position: relative;
+            @media screen and (min-width : 640px) {
+                margin: -280px auto 0 ;
+                max-width: 600px;
+            }
+        }
+        h1 {
+            font-size: 25px;
+        }
+    }
+}
