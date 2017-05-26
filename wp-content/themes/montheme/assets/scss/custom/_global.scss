@@ -1,3 +1,10 @@
+// Colors
+$rouge : #ed1b24;
+$noir : #000000;
+$blanc : #fff;
+$bleu : #8fc6e4;
+$grisClair : #f3f3f3;
+
 // Typo
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 h1, h2, h3, h4 {
@@ -28,12 +35,16 @@ body {
     font-size: 16px;
 }
 
-// Colors
-$rouge : #ed1b24;
-$noir : #000000;
-$blanc : #fff;
-$bleu : #8fc6e4;
-$grisClair : #f3f3f3;
+// Composants
+.bouton-rouge {
+    background: none;
+    color: $rouge;
+    border: 1px solid $rouge;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+}
 
 // Import fichiers css
 @import "navigation";

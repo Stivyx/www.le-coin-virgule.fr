@@ -12,6 +12,10 @@
             height: 390px;
             max-width: none;
             width: auto;
+            @media screen and (min-width : 1350px ) {
+                width: 100%;
+                height: auto;
+            }
         }
         figcaption {
             background: $grisClair;
@@ -56,10 +60,16 @@
 
 
     // Esprit coop
-    .accueil--esprit-cop {
-        margin: 30px 0;
+    .accueil--esprit-coop {
+        padding: 0 0 60px;
         position: relative;
-
+        @media screen and (min-width : 640px) {
+            background: url(../images/background-bleu.jpg) no-repeat;
+            background-position: bottom left;
+        }
+        .row {
+            position: relative;
+        }
         img {
             width: 100%;
             height: auto;
@@ -79,10 +89,59 @@
                 left: 15%;
                 transform: translateY(-50%);
                 margin-top: 0;
+                margin-right: 20px;
                 max-width: 700px;
             }
             @media screen and (min-width : 1200px) {
                 left: 400px;
+            }
+        }
+    }
+
+
+
+
+    // Le projet
+    .accueil--le-projet {
+        padding: 60px 0 30px;
+        position: relative;
+        @media screen and (min-width : 640px) {
+            background: url(../images/background-bleu.jpg) no-repeat;
+            background-position: top left;
+        }
+        .row {
+            position: relative;
+            @media screen and (min-width : 640px) {
+                min-height: 488px;
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+             @media screen and (min-width : 640px) {
+                 width: auto;
+                 position: absolute;
+                 right: 0;
+             }
+        }
+        article {
+            margin-top: -150px;
+            position: relative;
+            background: $grisClair;
+            border: 8px solid $blanc;
+            padding: 20px;
+            @media screen and (min-width : 640px) {
+                position: absolute;
+                top: 50%;
+                right: 15%;
+                transform: translateY(-50%);
+                margin-top: 0;
+                margin-left: 20px;
+                max-width: 700px;
+                transform: translateY(-50%);
+            }
+            @media screen and (min-width : 1200px) {
+                right: 400px;
             }
         }
     }

@@ -32,7 +32,7 @@ get_header(); ?>
 
 
 		<!-- Accueil esprit coop -->
-		<section class="accueil--esprit-cop">
+		<section class="accueil--esprit-coop">
 			<div class="row">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/esprit-coop.jpg" alt="">
 				<article>
@@ -48,6 +48,30 @@ get_header(); ?>
 				</article>
 			</div>
 		</section>
+
+
+
+		<!-- Accueil le projet -->
+		<section class="accueil--le-projet">
+			<div class="row">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/le-coin-virgule.jpg" alt="">
+				<article>
+					<h2>
+						Projet : Le Coin Virgule
+					</h2>
+					<p class="sous-titre-article">
+						Réaménagement de l’ancienne menuiserie
+					</p>
+					<p>
+						La  « Menuiserie »,  du  fait  de  sa  typologie,  est  un  espace  particulièrement  propice  à  l’accueil  d’un  programme type FabLab, avec une ouverture au public (grand public et/ou professionnel). Le fablab constituera un moteur de la synergie entre les différents opérateurs, artistes et usagers de la COOP.
+						Le  site  de  la  COOP  est  actuellement  voisine  d’une  partie  des  activités  du  port  autonome  de  Strasbourg qui continueront de cohabiter avec les activités que pourra accueillir la COOP à l’avenir.  
+					</p>
+					<a class="bouton-rouge" href="#">En savoir plus</a>
+				</article>
+			</div>
+		</section>
+
+
 
 
 </div>
