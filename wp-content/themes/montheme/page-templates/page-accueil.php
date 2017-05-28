@@ -62,9 +62,46 @@ get_header(); ?>
 					<p class="sous-titre-article">
 						Réaménagement de l’ancienne menuiserie
 					</p>
-					<p>
+					<p class="description" >
 						La  « Menuiserie »,  du  fait  de  sa  typologie,  est  un  espace  particulièrement  propice  à  l’accueil  d’un  programme type FabLab, avec une ouverture au public (grand public et/ou professionnel). Le fablab constituera un moteur de la synergie entre les différents opérateurs, artistes et usagers de la COOP.
 						Le  site  de  la  COOP  est  actuellement  voisine  d’une  partie  des  activités  du  port  autonome  de  Strasbourg qui continueront de cohabiter avec les activités que pourra accueillir la COOP à l’avenir.  
+					</p>
+					<a class="bouton-rouge" href="#">En savoir plus</a>
+				</article>
+			</div>
+		</section>
+
+
+
+		<!-- Separateur page d'accueil -->
+		<div class="row">
+			<hr class="accueil--separateur" >
+		</div>
+
+
+
+		<!-- Accueil le FABLAB et Ateliers d'artistes -->
+		<section class="accueil--le-fablab text-center">
+			<div class="row">
+				<article class="article-fablab" >
+					<h2>
+						FabLab
+					</h2>
+					<p class="description text-left" >
+						Le  FabLab  s’inscrit  dans  une  dynamique  de  création  collaborative,  aux  outils  et  aux  compétences  mutualisées ...
+					</p>
+					<a class="bouton-rouge" href="#">En savoir plus</a>
+				</article>
+
+				<img class="image-centrale" src="<?php echo get_template_directory_uri(); ?>/assets/images/imprimante-3d.jpg" alt="">
+
+				<article class="article-ateliers" >
+					<h2>
+						Ateliers d’artistes
+					</h2>
+					<p class="description text-left" >
+						L'atelier d'artiste, est le lieu de travail et, accessoirement, le logement d'un artiste.
+						La ville de Strasbourg met un parc de ...
 					</p>
 					<a class="bouton-rouge" href="#">En savoir plus</a>
 				</article>

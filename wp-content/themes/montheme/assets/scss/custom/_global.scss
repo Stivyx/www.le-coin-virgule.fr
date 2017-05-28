@@ -44,8 +44,14 @@ body {
     font-weight: 600;
     padding: 15px;
     text-transform: uppercase;
+    display: inline-block;
+    &:hover {
+        background: $rouge;
+        color: $blanc;
+    }
 }
 
 // Import fichiers css
 @import "navigation";
+@import "footer";
 @import "page-accueil/accueil-header";
