@@ -1,3 +1,46 @@
 .footer-container {
     margin: 0;
+    background: #60b8e6;
+    background: -moz-linear-gradient(left, #60b8e6 0%, #8fc6e4 100%);
+    background: -webkit-linear-gradient(left, #60b8e6 0%,#8fc6e4 100%);
+    background: linear-gradient(to right, #60b8e6 0%,#8fc6e4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60b8e6', endColorstr='#8fc6e4',GradientType=1 );
+    border: none;
+    text-align: center;
+
+    .row {
+
+        @media screen and ( min-width : 640px ) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .copy {
+        font-size: 15px;
+        font-weight: 600;
+        color: $blanc;
+        padding: 15px;
+        text-transform: uppercase;
+    }
+    .logo a {
+        padding: 15px;
+        display: inline-block;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+    }
+    .social a {
+        color: $blanc;
+        font-size: 25px;
+        padding: 15px;
+        display: inline-block;
+            transition: all 0.6s ease;
+        &:hover {
+            color: $rouge;
+            transition: all 0.6s ease;
+        }
+    }
 }

@@ -19,6 +19,9 @@ h2 {
     font-weight: 700;
     font-size: 19px;
     margin-bottom: 20px;
+    @media screen and (min-width : 960px) {
+        font-size: 35px;
+    }
 }
 .sous-titre-entete {
     font-weight: 700;
