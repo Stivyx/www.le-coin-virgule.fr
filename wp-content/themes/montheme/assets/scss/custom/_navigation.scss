@@ -52,8 +52,10 @@
             font-weight: 700;
             letter-spacing: 1.2px;
             padding: 30px 20px;
+            transition: all 0.6s ease;
             &:hover {
                 color: $rouge;
+                transition: all 0.6s ease;
             }
             @media SCREEN and (max-width : 959px ) {
                 font-size: 14px;
