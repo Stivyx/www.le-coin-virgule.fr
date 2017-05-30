@@ -1,10 +1,10 @@
-// Page projet
-.page--projet {
+// Page Fablab
+.page--fablab {
     margin: 0;
 
 
     // Header
-    .projet--header {
+    .fablab--header {
         margin-bottom: 40px;
 
         figure {
@@ -47,10 +47,9 @@
 
 
 
-    // Le projet
-    .projet--le-projet {
+    // Le fablab
+    .fablab--le-fablab {
         .row {
-            margin-bottom : 60px;
             @media screen and ( min-width : 640px ) {
                 display: flex;
                 align-items: center;
@@ -58,8 +57,8 @@
         }
         .image-deco {
             margin-bottom: 20px;
-           max-width: 387px;
-           margin: 0 auto;
+            max-width: 387px;
+            margin: 0 auto;
             @media screen and ( min-width : 640px ) {
                 flex : 0 0 45%;
                 order: 10;
@@ -87,12 +86,8 @@
 
 
 
-    // L'emplacement'
-    .projet--emplacement {
-        @media screen and ( min-width : 640px ) {
-            background: $bleu;
-            color: $blanc;
-        }
+    // Les ateliers d'artiste
+    .fablab--ateliers-artistes {
         .row {
             margin-bottom : 60px;
             padding: 30px 0;
@@ -117,7 +112,6 @@
            padding: 15px;
            border: 5px solid $blanc;
            @media screen and ( min-width : 640px ) {
-                border: 5px solid $bleu;
                 margin: -30px -20px 0px 20px;
                 position: relative;
            }
@@ -133,45 +127,5 @@
 
 
 
-    // Le batiment
-    .projet--le-batiment {
-        .row {
-            margin-bottom : 60px;
-            @media screen and ( min-width : 640px ) {
-                display: flex;
-                align-items: center;
-            }
-        }
-        .image-deco {
-            margin-bottom: 20px;
-           max-width: 387px;
-           margin: 0 auto;
-            @media screen and ( min-width : 640px ) {
-                flex : 0 0 45%;
-                order: 10;
-            }
-        }
-        .legend {
-           background: $grisClair;
-           font-size: 18px;
-           font-weight: 600;
-           padding: 15px;
-           border: 5px solid $blanc;
-           @media screen and ( min-width : 640px ) {
-                margin: -30px 20px 0px -20px;
-                position: relative;
-           }
-       }
-       .article {
-           padding: 20px;
-            @media screen and ( min-width : 640px ) {
-                flex : 0 0 50%;
-            }
-       }
-    }
-
-
-
-
-   //Fin de la page d'projet
+   //Fin de la page le fablab
 }
