@@ -12,10 +12,9 @@ get_header(); ?>
 			<figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/la-coop-vu-du-ciel.jpg" alt="">
 				<figcaption>
-					<h1>Le coin virgule</h1>
-					<p class="sous-titre-entete" >Projet de Réaménagement quartier de la Coop</p>
-					<p>A l'instar d'autres métropoles françaises et européennes, Strasbourg a lancé de vastes projets de réhabilitation de ses friches industrielles (Presqu'Ile Malraux, route du Rhin, ZAC des Deux Rives) en nouveaux quartiers de la ville mêlant habitations, bureaux et espaces d'innovations artistiques ou entrepreunariales.<br><br>
-					Acquis en 2015 par la ville de Strasbourg, les locaux de la Coop et les parcelles avoisinantes ont donné lieu à différents appels à projets.</p>
+					<h1><?php the_field("header_h1"); ?></h1>
+					<p class="sous-titre-entete" ><?php the_field("header_sous_titre"); ?></p>
+					<p><?php the_field("header_labeur"); ?></p>
 				</figcaption>
 			</figure>
 		</section>
@@ -25,7 +24,7 @@ get_header(); ?>
 		<!-- Accueil citation -->
 		<section class="accueil--citation row">
 			<cite>
-				La Coop doit être un pôle de vie culturelle, économique et citoyenne. Le cahier des charges prévoit un lieu ouvert 24 heures sur 24 et 7 jours sur 7, pour se divertir ou travailler.       <span class="nom">Alain Fontanel</span> 
+				<?php the_field("citation_labeur"); ?>  <span class="nom"><?php the_field("citation_nom"); ?></span> 
 			</cite>
 		</section>
 
@@ -37,13 +36,13 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/esprit-coop.jpg" alt="">
 				<article>
 					<h2>
-						Le site et l’esprit COOP
+						<?php the_field("esprit_coop_h2"); ?>
 					</h2>
 					<p class="sous-titre-article">
-						Anciens bâtiments de la Coop Alsace au Port du Rhin à Strasbourg
+						<?php the_field("esprit_coop_sous_titre"); ?>
 					</p>
 					<p>
-						La COOP est un lieu singulier du fait de son histoire et de sa forte dimension symbolique pour les Strasbourgeois. Dessinant une demi-­‐lune au cœur du port, à proximité du Rhin et de l’Allemagne, il a accueilli  jusqu’en  2015  le  siège  et  les  entrepôts  de  l’Union  des  Coopérateurs  d’Alsace,  entreprise  coopérative  de  distribution  fondée  en  1902  à  Strasbourg.  Cette  zone  concentre  de  nombreuses ambitions pour la nouvelle « nouvelle ville » du projet des Deux-­‐Rives. 
+						 <?php the_field("esprit_coop_labeur"); ?>
 					</p>
 				</article>
 			</div>
@@ -57,16 +56,15 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/le-coin-virgule.jpg" alt="">
 				<article>
 					<h2>
-						Projet : Le Coin Virgule
+						<?php the_field("le_projet_h2"); ?>
 					</h2>
 					<p class="sous-titre-article">
-						Réaménagement de l’ancienne menuiserie
+						<?php the_field("le_projet_sous_titre"); ?>
 					</p>
 					<p class="description" >
-						La  « Menuiserie »,  du  fait  de  sa  typologie,  est  un  espace  particulièrement  propice  à  l’accueil  d’un  programme type FabLab, avec une ouverture au public (grand public et/ou professionnel). Le fablab constituera un moteur de la synergie entre les différents opérateurs, artistes et usagers de la COOP.
-						Le  site  de  la  COOP  est  actuellement  voisine  d’une  partie  des  activités  du  port  autonome  de  Strasbourg qui continueront de cohabiter avec les activités que pourra accueillir la COOP à l’avenir.  
+						 <?php the_field("le_projet_labeur"); ?>
 					</p>
-					<a class="bouton-rouge" href="#">En savoir plus</a>
+					<a class="bouton-rouge" href="<?php echo esc_url( home_url( '/' ) ); ?>le-projet/"><?php the_field("le_projet_bouton"); ?></a>
 				</article>
 			</div>
 		</section>
@@ -85,25 +83,24 @@ get_header(); ?>
 			<div class="row">
 				<article class="article-fablab" >
 					<h2>
-						FabLab
+						<?php the_field("fablab_titre"); ?>
 					</h2>
 					<p class="description text-left" >
-						Le  FabLab  s’inscrit  dans  une  dynamique  de  création  collaborative,  aux  outils  et  aux  compétences  mutualisées ...
+						<?php the_field("fablab_labeur"); ?>
 					</p>
-					<a class="bouton-rouge" href="#">En savoir plus</a>
+					<a class="bouton-rouge" href="<?php echo esc_url( home_url( '/' ) ); ?>le-fablab/"><?php the_field("le_projet_bouton"); ?></a>
 				</article>
 
 				<img class="image-centrale" src="<?php echo get_template_directory_uri(); ?>/assets/images/imprimante-3d.jpg" alt="">
 
 				<article class="article-ateliers" >
 					<h2>
-						Ateliers d’artistes
+						<?php the_field("artiste_titre"); ?>
 					</h2>
 					<p class="description text-left" >
-						L'atelier d'artiste, est le lieu de travail et, accessoirement, le logement d'un artiste.
-						La ville de Strasbourg met un parc de ...
+						<?php the_field("artiste_labeur"); ?>
 					</p>
-					<a class="bouton-rouge" href="#">En savoir plus</a>
+					<a class="bouton-rouge" href="<?php echo esc_url( home_url( '/' ) ); ?>le-fablab/"><?php the_field("le_projet_bouton"); ?></a>
 				</article>
 			</div>
 		</section>
