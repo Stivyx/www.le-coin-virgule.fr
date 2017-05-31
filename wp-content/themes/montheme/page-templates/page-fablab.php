@@ -12,7 +12,7 @@ get_header(); ?>
 			<figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/croquis-ateliers.jpg" alt="">
 				<figcaption>
-					<h1>FabLab et ateliers d’artistes</h1>
+					<h1><?php the_field("header_h1"); ?></h1>
 				</figcaption>
 			</figure>
 		</section>
@@ -24,14 +24,14 @@ get_header(); ?>
 			<div class="row ">
 				<figure class="image-deco">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/imprimantes-3d.jpg" alt="">
-					<figcaption class="text-center legend" >Des imprimantes 3D</figcaption>
+					<figcaption class="text-center legend" ><?php the_field("fablab_image"); ?></figcaption>
 				</figure>
 				<article class="article" >
 					<h2>
-						Le FabLab
+						<?php the_field("fablab_h2"); ?>
 					</h2>
 					<p>
-						Le  FabLab  s’inscrit  dans  une  dynamique  de  création  collaborative,  aux  outils  et  aux  compétences  mutualisées, ceci permettant notamment de créer des objets uniques : objets décoratifs, prothèses, orthèses, outils… Pour être appelé « FabLab », le makerspace doit respecter la charte mise en place par le Massachusetts Institute of Technology (MIT). 
+						 <?php the_field("fablab_labeur"); ?>
 					</p>
 				</article>
 			</div>
@@ -44,15 +44,14 @@ get_header(); ?>
 			<div class="row ">
 				<figure class="image-deco">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/ateliers-artistes.jpg" alt="">
-					<figcaption class="text-center legend" >Un atelier à rénover</figcaption>
+					<figcaption class="text-center legend" ><?php the_field("ateliers_image"); ?></figcaption>
 				</figure>
 				<article class="article" >
 					<h2>
-						Les ateliers d’artistes
+						<?php the_field("ateliers_h2"); ?>
 					</h2>
 					<p>
-						L'atelier d'artiste, est le lieu de travail et, accessoirement, le logement d'un artiste. <br>
-						La ville de Strasbourg met un parc de 5 ateliers à disposition des artistes plasticiens professionnels actifs dans l'Eurométropole mesurant de 28m² à 70m².
+						<?php the_field("ateliers_labeur"); ?>
 					</p>
 				</article>
 			</div>

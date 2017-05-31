@@ -12,7 +12,7 @@ get_header(); ?>
 			<figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/carte-coop.jpg" alt="">
 				<figcaption>
-					<h1>Contactez nous !</h1>
+					<h1><?php the_field("header_h1"); ?></h1>
 				</figcaption>
 			</figure>
 		</section>
@@ -22,11 +22,11 @@ get_header(); ?>
 		<section class="row formulaire">
 			<div class="large-8 large-push-2 medium-12 column">
 				<p>
-					Les champs marqués d’un <span class="obligatoire">*</span> sont obligatoires.
+					<?php the_field("formulaire_infos"); ?>
 				</p>
 				
 				<div class="row formulaire-container">
-					<?php echo ( do_shortcode( '[contact-form-7 id="24" title="Formulaire de contact"]' ) ); ?>
+					<?php the_field("contact_form"); ?>
 				</div>
 				
 				
