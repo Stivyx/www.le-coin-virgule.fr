@@ -52,6 +52,11 @@
             font-weight: 700;
             letter-spacing: 1.2px;
             padding: 30px 20px;
+            transition: all 0.6s ease;
+            &:hover {
+                color: $rouge;
+                transition: all 0.6s ease;
+            }
             @media SCREEN and (max-width : 959px ) {
                 font-size: 14px;
                 padding: 30px 15px;
@@ -66,7 +71,31 @@
         }
         a {
             display: inline-block;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+            }
         }
     }
+
+    //Qtranslate
+    .qtranxs-lang-menu{
+        @media screen and (min-width:640px) {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        &>a {
+        
+        padding: 10px;
+        }
+        .dropdown {
+            background: $bleu;
+            border: none;
+        }
+    }
+
+        
 }
 

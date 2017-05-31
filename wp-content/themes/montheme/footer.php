@@ -13,6 +13,30 @@
 		</section>
 		<div class="footer-container" data-sticky-footer>
 			<footer class="footer">
+				<div class="row">
+					<div class="medium-4 column copy">
+						Copyright © 2017
+					</div>
+					<div class="medium-4 column logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Logo le coin virgule">
+						</a>
+					</div>
+					<div class="medium-4 column social">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						
+					</div>
+				</div>
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>

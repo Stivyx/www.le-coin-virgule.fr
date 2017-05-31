@@ -1,0 +1,114 @@
+// Page contact
+.page--contact {
+    margin: 0;
+
+
+    // Contact header
+    .contact--header {
+        margin-bottom: 40px;
+
+        figure {
+            overflow: hidden;
+        }
+        img {
+            height: 390px;
+            max-width: none;
+            width: auto;
+            position: relative;
+            left: -270px;
+            @media screen and (min-width : 960px ) {
+
+            left: 0;
+            }
+            @media screen and (min-width : 1350px ) {
+                width: 100%;
+                height: auto;
+            }
+        }
+        figcaption {
+            background: $grisClair;
+            border: 8px solid $blanc;
+            padding: 30px 20px;
+            margin: -60px 20px 0 20px;
+            position: relative;
+            @media screen and (min-width : 640px) {
+                margin: -60px auto 0 ;
+                max-width: 600px;
+            }
+        }
+        h1 {
+            margin: 0;
+            @media screen and (min-width : 640px) {
+                font-size: 25px;
+            }
+        }
+    }
+
+
+
+    .formulaire {
+        p {
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .obligatoire {
+            color: $rouge;
+            font-size: 14px;
+        }
+        .formulaire-container {
+            position: relative;
+        }
+        .champ-formulaire {
+            position: relative;
+        }
+        .label-form {
+            position: absolute;
+            top: 4px;
+            left: 20px;
+            z-index: 10;
+            background: #fff;
+            padding: 10px 10px 0 10px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+        input, textarea {
+            border: 1px solid $rouge;
+        }
+        textarea {
+            height: 80px;
+            margin-bottom: 30px;
+        }
+        input[type="submit"]{
+            background: none;
+            color: $rouge;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 15px 20px;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                background: $rouge;
+                color: $blanc;
+                transition: all 0.3s ease;
+            }
+        }
+        div.wpcf7-validation-errors {
+            border: none;
+            width: 100%;
+            text-align: center;
+            color: red;
+            font-weight: 700;
+            @media screen and ( min-width : 640px ) {
+                position: absolute;
+                bottom: 1px;
+            }
+        }
+    }
+
+
+    
+   //Fin de la page le fablab
+}

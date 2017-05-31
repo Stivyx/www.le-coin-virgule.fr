@@ -8,34 +8,28 @@
 
 get_header(); ?>
 
- <div class="main-wrap" role="main">
-	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-		<header>
-			<h1 class="entry-title"><?php _e( 'File Not Found', 'foundationpress' ); ?></h1>
-		</header>
-		<div class="entry-content">
-			<div class="error">
-				<p class="bottom"><?php _e( 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'foundationpress' ); ?></p>
-			</div>
-			<p><?php _e( 'Please try the following:', 'foundationpress' ); ?></p>
-			<ul>
-				<li><?php _e( 'Check your spelling', 'foundationpress' ); ?></li>
-				<li>
-					<?php
-						/* translators: %s: home page url */
-						printf( __(
-							'Return to the <a href="%s">home page</a>', 'foundationpress' ),
-							home_url()
-						);
-					?>
-				</li>
-				<li><?php _e( 'Click the <a href="javascript:history.back()">Back</a> button', 'foundationpress' ); ?></li>
-			</ul>
-		</div>
-	</article>
+<div class="page--404" role="main">
 
- <?php get_sidebar(); ?>
+		<!-- contact header -->
+		<section class="page404--header">
+			<figure>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/page404.jpg" alt="">
+				<figcaption>
+					<h1>La page que vous recherchez a disparu !?</h1>
+				</figcaption>
+			</figure>
+		</section>
 
+		<article class="page404--content">
+			<p class="le404">404</p>
+			<p class="not-found" >Page not found</p>
+			<p class="description" >La page que vous recherchez a disparu ou est temporairement indisponible.<br> Rassurez-vous, nous avons envoyé nos meilleurs agents à sa recherche.</p>
+			<p class="retour-accueil">Retour à la <a href="<?php echo esc_url( home_url( '/' ) ); ?>">page d'accueil</a></p>
+		</article>
+
+
+	
+			
 </div>
 
 <?php get_footer();
