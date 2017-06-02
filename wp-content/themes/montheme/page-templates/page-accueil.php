@@ -17,7 +17,7 @@ get_header(); ?>
 					<p><?php the_field("header_labeur"); ?></p>
 				</figcaption>
 			</figure>
-		</section>
+		</section> 
 
 
 
