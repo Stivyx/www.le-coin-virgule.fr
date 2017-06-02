@@ -33,6 +33,7 @@
     //navigation
     .top-bar {
         padding: 0;
+        position: relative;
         background: none;
         display: flex;
         justify-content: space-between;
@@ -90,8 +91,26 @@
             right: 10px;
         }
         &>a {
-        
-        padding: 10px;
+            @media screen and ( min-width : 640px ) {
+                text-indent: -1000px;
+                width: 50px;
+                overflow: hidden;
+                position: relative;
+                img {
+                    position: absolute;
+                    right: 20px;
+                }
+            }
+            @media screen and ( min-width : 960px ) {
+                text-indent: -108px;
+            }
+            padding: 10px;
+        }
+        .qtranxs-lang-menu-item a {
+            padding: 15px;
+        }
+        img {
+            vertical-align: baseline;
         }
         .dropdown {
             background: $bleu;
