@@ -12,7 +12,7 @@ get_header(); ?>
 			<figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/table-fablab.jpg" alt="">
 				<figcaption>
-					<h1><?php the_field("header_h1"); ?>lol</h1>
+					<h1><?php the_field("header_h1"); ?></h1>
 				</figcaption>
 			</figure>
 		</section>
