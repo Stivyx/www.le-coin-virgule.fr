@@ -10,7 +10,7 @@ get_header(); ?>
 		<!-- contact header -->
 		<section class="contact--header">
 			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/carte-coop.jpg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/imprimante-fablab.jpg" alt="">
 				<figcaption>
 					<h1><?php the_field("header_h1"); ?></h1>
 				</figcaption>

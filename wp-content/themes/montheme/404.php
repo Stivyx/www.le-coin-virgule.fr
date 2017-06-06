@@ -13,7 +13,7 @@ get_header(); ?>
 		<!-- contact header -->
 		<section class="page404--header">
 			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/page404.jpg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/objets-fablab.jpg" alt="">
 				<figcaption>
 					<h1>La page que vous recherchez a disparu !?</h1>
 				</figcaption>

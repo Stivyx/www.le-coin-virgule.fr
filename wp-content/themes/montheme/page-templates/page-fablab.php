@@ -10,7 +10,7 @@ get_header(); ?>
 		<!-- Fablab header -->
 		<section class="fablab--header">
 			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/croquis-ateliers.jpg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/table-fablab.jpg" alt="">
 				<figcaption>
 					<h1><?php the_field("header_h1"); ?></h1>
 				</figcaption>

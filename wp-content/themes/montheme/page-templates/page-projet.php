@@ -10,7 +10,7 @@ get_header(); ?>
 		<!-- Accueil header -->
 		<section class="projet--header">
 			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/plan-la-virgule.jpg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/atelier-fablab.jpg" alt="">
 				<figcaption>
 					<h1><?php the_field("header_h1"); ?></h1>
 				</figcaption>
