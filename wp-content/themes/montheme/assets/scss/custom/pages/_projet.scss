@@ -15,11 +15,8 @@
             max-width: none;
             width: auto;
             position: relative;
-            left: -270px;
-            @media screen and (min-width : 960px ) {
-
-            left: 0;
-            }
+            left: 50%;
+            transform: translateX(-50%);
             @media screen and (min-width : 1350px ) {
                 width: 100%;
                 height: auto;
