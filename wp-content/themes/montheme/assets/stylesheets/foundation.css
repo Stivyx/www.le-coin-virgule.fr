@@ -8090,7 +8090,12 @@ body {
   .page--accueil .accueil--header img {
     height: 390px;
     max-width: none;
-    width: auto; }
+    width: auto;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
     @media screen and (min-width: 1350px) {
       .page--accueil .accueil--header img {
         width: 100%;
@@ -8257,10 +8262,10 @@ body {
       max-width: none;
       width: auto;
       position: relative;
-      left: -270px; }
-      @media screen and (min-width: 960px) {
-        .page--projet .projet--header img {
-          left: 0; } }
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
       @media screen and (min-width: 1350px) {
         .page--projet .projet--header img {
           width: 100%;
@@ -8413,10 +8418,10 @@ body {
       max-width: none;
       width: auto;
       position: relative;
-      left: -270px; }
-      @media screen and (min-width: 960px) {
-        .page--fablab .fablab--header img {
-          left: 0; } }
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
       @media screen and (min-width: 1350px) {
         .page--fablab .fablab--header img {
           width: 100%;
@@ -8523,10 +8528,10 @@ body {
       max-width: none;
       width: auto;
       position: relative;
-      left: -270px; }
-      @media screen and (min-width: 960px) {
-        .page--contact .contact--header img {
-          left: 0; } }
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
       @media screen and (min-width: 1350px) {
         .page--contact .contact--header img {
           width: 100%;
